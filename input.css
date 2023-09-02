@@ -11,10 +11,9 @@
   left: 0;
 } */
 
-
 body {
+  border: 1px solid rebeccapurple;
   overflow-x: hidden;
-  width: 100%;
 }
 
 nav ul li {
