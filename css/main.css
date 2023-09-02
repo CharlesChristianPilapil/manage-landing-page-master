@@ -566,10 +566,6 @@ video {
   position: fixed;
 }
 
-.relative {
-  position: relative;
-}
-
 .inset-x-0 {
   left: 0px;
   right: 0px;
@@ -657,10 +653,6 @@ video {
 }
 
 .w-full {
-  width: 100%;
-}
-
-.w-\[100\%\] {
   width: 100%;
 }
 
@@ -828,6 +820,7 @@ video {
 
 body {
   overflow-x: hidden;
+  width: 100%;
 }
 
 nav ul li {
