@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+/* body {
+  background-image: url('../images/bg-tablet-pattern.svg');
+  background-color: gray;
+  background-repeat: no-repeat;
+  left: 0;
+} */
+
+body {
+  overflow-x: hidden;
+}
+
+nav ul li {
+  @apply my-1 md:mx-3 md:my-0 lg:mx-5;
+}
+
+nav ul li a {
+  @apply transition duration-300 font-medium hover:text-DarkGrayishBlue;
+}
+
+#get-started1 {
+  @apply hidden text-VeryLightGray hover:text-black bg-BrightRed hover:bg-red-500 transition duration-300 px-7 py-3 rounded-full md:block md:mr-5;
+}
+
+#get-started {
+  @apply text-VeryLightGray hover:text-black bg-BrightRed hover:bg-red-500 transition duration-300 px-7 py-3 rounded-full;
+}
