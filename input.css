@@ -4,13 +4,9 @@
 
 @import "tailwindcss/utilities";
 
-/* body {
-  background-image: url('../images/bg-tablet-pattern.svg');
-  background-color: gray;
-  background-repeat: no-repeat;
-  left: 0;
-} */
-
+body {
+  background-image: url("../images/bg-tablet-pattern.svg");
+}
 
 nav ul li {
   @apply my-1 md:mx-3 md:my-0 lg:mx-5;
@@ -21,9 +17,27 @@ nav ul li a {
 }
 
 #get-started1 {
-  @apply hidden text-VeryLightGray hover:text-black bg-BrightRed hover:bg-red-500 transition duration-300 px-7 py-3 rounded-full md:block md:mr-5;
+  @apply hidden text-VeryLightGray font-semibold bg-BrightRed hover:bg-lightBrightRed transition duration-300 px-7 py-3 rounded-full md:block md:mr-5;
 }
 
 #get-started {
-  @apply text-VeryLightGray hover:text-black bg-BrightRed hover:bg-red-500 transition duration-300 px-7 py-3 rounded-full;
+  @apply text-VeryLightGray font-semibold bg-BrightRed hover:bg-lightBrightRed transition duration-300 px-7 py-3 rounded-full;
 }
+
+#get-started-white {
+  @apply text-BrightRed font-semibold bg-white hover:text-lightBrightRed transition duration-300 px-7 py-3 rounded-full;
+}
+
+#simplify {
+  background-image: url("../images/bg-simplify-section-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+section div ul li {
+  @apply text-white font-semibold w-28 my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
+}
+
+#socIcon i {
+  @apply text-4xl cursor-pointer text-VeryLightGray hover:text-BrightRed transition duration-300;
+}
+
