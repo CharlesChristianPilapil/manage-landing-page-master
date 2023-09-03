@@ -11,10 +11,6 @@
   left: 0;
 } */
 
-body {
-  border: 1px solid rebeccapurple;
-  overflow-x: hidden;
-}
 
 nav ul li {
   @apply my-1 md:mx-3 md:my-0 lg:mx-5;
