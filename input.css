@@ -33,6 +33,12 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 967px) {
+  #simplify {
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+  }
+}
+
 section div ul li {
   @apply text-white font-semibold w-28 my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
 }

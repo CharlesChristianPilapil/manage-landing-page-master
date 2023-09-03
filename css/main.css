@@ -617,42 +617,6 @@ video {
   margin-top: 5rem;
 }
 
-.mr-10 {
-  margin-right: 2.5rem;
-}
-
-.mr-28 {
-  margin-right: 7rem;
-}
-
-.mr-36 {
-  margin-right: 9rem;
-}
-
-.mr-\[\] {
-  margin-right: ;
-}
-
-.mr-\[20\] {
-  margin-right: 20;
-}
-
-.mr-\[20\%\] {
-  margin-right: 20%;
-}
-
-.mr-\[10\%\] {
-  margin-right: 10%;
-}
-
-.mr-\[50\%\] {
-  margin-right: 50%;
-}
-
-.mr-\[5\%\] {
-  margin-right: 5%;
-}
-
 .flex {
   display: flex;
 }
@@ -765,12 +729,6 @@ video {
   margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-0 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0px * var(--tw-space-y-reverse));
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -856,11 +814,6 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 }
 
 .pb-10 {
@@ -1064,6 +1017,12 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+@media (min-width: 967px) {
+  #simplify {
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+  }
+}
+
 section div ul li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1160,18 +1119,6 @@ section div ul li:hover {
     margin-top: 0.75rem;
   }
 
-  .lg\:mr-\[5\%\] {
-    margin-right: 5%;
-  }
-
-  .lg\:mr-\[5\] {
-    margin-right: 5;
-  }
-
-  .lg\:mr-\[10\%\] {
-    margin-right: 10%;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -1240,6 +1187,10 @@ section div ul li:hover {
     justify-content: space-between;
   }
 
+  .lg\:justify-around {
+    justify-content: space-around;
+  }
+
   .lg\:justify-evenly {
     justify-content: space-evenly;
   }
@@ -1277,10 +1228,6 @@ section div ul li:hover {
     text-align: start;
   }
 
-  .lg\:text-end {
-    text-align: end;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1293,14 +1240,6 @@ section div ul li:hover {
 }
 
 @media (min-width: 1440px) {
-  .xl\:mr-\[10\%\] {
-    margin-right: 10%;
-  }
-
-  .xl\:mr-\[8\%\] {
-    margin-right: 8%;
-  }
-
   .xl\:w-3\/5 {
     width: 60%;
   }
