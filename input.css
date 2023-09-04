@@ -33,15 +33,16 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
+section div ul li {
+  @apply text-white border border-gray-50 font-semibold my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
+}
+
 @media (min-width: 967px) {
-  #simplify {
-    background-image: url("../images/bg-simplify-section-desktop.svg");
+  section div ul li {
+    width: 6.3rem;
   }
 }
 
-section div ul li {
-  @apply text-white font-semibold w-28 my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
-}
 
 #socIcon i {
   @apply text-4xl cursor-pointer text-VeryLightGray hover:text-BrightRed transition duration-300;
