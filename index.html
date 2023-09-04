@@ -37,7 +37,7 @@
   <body>
     <div class="flex flex-col space-y-16">
       <nav
-        class="w-full h-20 container flex flex-row justify-between align-baseline mx-auto items-center py-auto border border-green-500"
+        class="w-full h-20 container flex flex-row justify-between align-baseline mx-auto items-center py-auto"
       >
         <img src="images/logo.svg" alt="logo" class="ml-5" />
         <!-- <div
@@ -53,7 +53,7 @@
         </div> -->
         <ul
           id="nav-bar"
-          class="fixed top-24 border z-[2] opacity-0 transition duration-500 bg-white flex flex-col mx-auto inset-x-0 w-3/4 py-5 text-center md:bg-transparent md:flex-row md:static md:w-auto md:mx-0 md:py-0"
+          class="absolute top-24 z-[2] opacity-0 transition duration-500 bg-white flex flex-col mx-auto inset-x-0 w-3/4 py-5 text-center md:opacity-100 md:bg-transparent md:shadow-none md:flex-row md:static md:w-auto md:mx-0 md:py-0"
         >
           <li><a href=""> Pricing </a></li>
           <li><a href=""> Product </a></li>
@@ -111,7 +111,7 @@
         <div class="flex flex-col pl-10 space-y-10 lg:w-1/2">
           <div>
             <h1
-              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white"
+              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white lg:bg-transparent"
             >
               <span
                 class="bg-BrightRed border-[3px] border-BrightRed text-white px-5 py-2 rounded-full text-center mr-3 lg:mr-7"
@@ -128,7 +128,7 @@
           </div>
           <div>
             <h1
-              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white"
+              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white lg:bg-transparent"
             >
               <span
                 class="bg-BrightRed border-[3px] border-BrightRed text-white px-5 py-2 rounded-full text-center mr-3 lg:mr-7"
@@ -145,7 +145,7 @@
           </div>
           <div>
             <h1
-              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white overflo"
+              class="bg-red-100 text-DarkBlue py-2 rounded-l-full w-[100%] lg:text-lg font-semibold lg:bg-white lg:bg-transparent"
             >
               <span
                 class="bg-BrightRed border-[3px] border-BrightRed text-white px-5 py-2 rounded-full text-center mr-3 lg:mr-7"
@@ -262,7 +262,8 @@
               class="rounded-full px-5 h-10"
             />
             <button
-              class="rounded-full text-VeryLightGray font-semibold bg-BrightRed py-2 px-6 h-10"
+              id="go"
+              class="rounded-full text-VeryLightGray font-semibold bg-BrightRed py-2 px-6 h-10 hover:bg-lightBrightRed transition duration-300"
             >
               Go
             </button>

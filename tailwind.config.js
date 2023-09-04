@@ -18,7 +18,12 @@ module.exports = {
         VeryPaleRed: "hsl(13, 100%, 96%)",
         VeryLightGray: "hsl(0, 0%, 98%)",
       },
+
+      boxShadow: {
+        xl: '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   plugins: [],
 };
+

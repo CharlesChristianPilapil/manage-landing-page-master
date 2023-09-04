@@ -33,6 +33,10 @@ nav ul li a {
   background-repeat: no-repeat;
 }
 
+#get-started1:hover, #get-started:hover, #get-started-white:hover, #go:hover  {
+  box-shadow: black 0px 10px 10px -7px;
+}
+
 section div ul li {
   @apply text-white font-semibold my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
 }

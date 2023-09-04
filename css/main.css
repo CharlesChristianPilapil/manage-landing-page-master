@@ -566,12 +566,12 @@ video {
   position: fixed;
 }
 
-.relative {
-  position: relative;
+.absolute {
+  position: absolute;
 }
 
-.sticky {
-  position: sticky;
+.relative {
+  position: relative;
 }
 
 .inset-x-0 {
@@ -917,6 +917,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -1044,6 +1048,10 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
+#get-started1:hover, #get-started:hover, #get-started-white:hover, #go:hover  {
+  box-shadow: black 0px 10px 10px -7px;
+}
+
 section div ul li {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1103,6 +1111,11 @@ section div ul li:hover {
   color: hsl(12 88% 59% / var(--tw-text-opacity));
 }
 
+.hover\:bg-lightBrightRed:hover {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 100% 71% / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:static {
     position: static;
@@ -1136,6 +1149,24 @@ section div ul li:hover {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:opacity-20 {
+    opacity: 0.2;
+  }
+
+  .md\:opacity-10 {
+    opacity: 0.1;
+  }
+
+  .md\:opacity-100 {
+    opacity: 1;
+  }
+
+  .md\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
 
@@ -1242,6 +1273,10 @@ section div ul li:hover {
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-transparent {
+    background-color: transparent;
   }
 
   .lg\:px-0 {
