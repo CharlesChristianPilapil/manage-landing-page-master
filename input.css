@@ -34,7 +34,7 @@ nav ul li a {
 }
 
 section div ul li {
-  @apply text-white border border-gray-50 font-semibold my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
+  @apply text-white font-semibold my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
 }
 
 @media (min-width: 967px) {
