@@ -1057,6 +1057,14 @@ section div ul li:hover {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-bottom: 0.75rem;
+  }
+
+  #simplify {
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-size: cover;
+  }
+
+  section div ul li {
     width: 6.3rem;
   }
 }
@@ -1185,8 +1193,8 @@ section div ul li:hover {
     align-items: flex-start;
   }
 
-  .lg\:items-end {
-    align-items: flex-end;
+  .lg\:items-center {
+    align-items: center;
   }
 
   .lg\:justify-between {

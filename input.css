@@ -38,6 +38,12 @@ section div ul li {
 }
 
 @media (min-width: 967px) {
+
+  #simplify {
+    background-image: url("../images/bg-simplify-section-desktop.svg");
+    background-size: cover;
+  }  
+
   section div ul li {
     width: 6.3rem;
   }
