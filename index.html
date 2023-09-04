@@ -29,7 +29,10 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <div class="flex flex-col space-y-16">
@@ -49,7 +52,8 @@
           </div>
         </div> -->
         <ul
-          class="fixed top-24 border z-[2] bg-white border-black flex flex-col mx-auto inset-x-0 w-3/4 py-5 text-center md:flex-row md:static md:w-auto md:mx-0 md:py-0"
+          id="nav-bar"
+          class="fixed top-24 border z-[2] opacity-0 transition duration-500 bg-white flex flex-col mx-auto inset-x-0 w-3/4 py-5 text-center md:bg-transparent md:flex-row md:static md:w-auto md:mx-0 md:py-0"
         >
           <li><a href=""> Pricing </a></li>
           <li><a href=""> Product </a></li>
@@ -59,8 +63,9 @@
         </ul>
         <button id="get-started1">Get Started</button>
         <img
-          src="images/icon-hamburger.svg"
+          src="../images/icon-hamburger.svg"
           alt=""
+          id="nav-toggle"
           class="cursor-pointer mr-3 md:hidden"
         />
       </nav>
@@ -236,44 +241,45 @@
         id="simplify"
         class="flex flex-col bg-BrightRed px-10 py-16 items-center space-y-5 lg:flex-row lg:justify-around"
       >
-        <h1 class="text-4xl text-center font-bold text-VeryLightGray lg:w-2/5 lg:text-start">
+        <h1
+          class="text-4xl text-center font-bold text-VeryLightGray lg:w-2/5 lg:text-start"
+        >
           Simplify how your team works today.
         </h1>
         <button id="get-started-white" class="bg-white">Get Started</button>
       </section>
     </div>
 
-    <section class="bg-VeryDarkBlue pb-10 pt-16 ">
+    <section class="bg-VeryDarkBlue pb-10 pt-16">
       <div
         class="pb-10 px-5 flex flex-col space-y-10 lg:flex-row-reverse lg:space-y-0 lg:justify-evenly"
       >
         <div class="flex flex-col items-center justify-between space-y-10">
           <div class="flex justify-center space-x-5">
             <input
-            type="email"
-            placeholder="Updates in your inbox.. "
-            class="rounded-full px-5 h-10"
-          />
-          <button
-            class="rounded-full text-VeryLightGray font-semibold bg-BrightRed py-2 px-6 h-10">
-            Go
-          </button>
+              type="email"
+              placeholder="Updates in your inbox.. "
+              class="rounded-full px-5 h-10"
+            />
+            <button
+              class="rounded-full text-VeryLightGray font-semibold bg-BrightRed py-2 px-6 h-10"
+            >
+              Go
+            </button>
           </div>
 
-          <p class="text-end hidden lg:block text-DarkGrayishBlue"> Copyright 2020. All Rights Reserved </p>
+          <p class="text-end hidden lg:block text-DarkGrayishBlue">
+            Copyright 2020. All Rights Reserved
+          </p>
         </div>
         <div class="flex justify-center space-x-12 lg:justify-evenly lg:w-2/6">
-          <ul
-            class="flex flex-col lg:items-center lg:w-2/5"
-          >
+          <ul class="flex flex-col lg:items-center lg:w-2/5">
             <li>Home</li>
             <li>Pricing</li>
             <li>Products</li>
             <li>About Us</li>
           </ul>
-          <ul
-            class="flex flex-col lg:items-center lg:w-2/5"
-          >
+          <ul class="flex flex-col lg:items-center lg:w-2/5">
             <li>Careers</li>
             <li>Community</li>
             <li>Privacy Policy</li>
@@ -297,9 +303,9 @@
         </div>
       </div>
 
-      <p class="text-DarkGrayishBlue text-center lg:hidden"> Copyright 2020. All Rights Reserved </p>
-
-
+      <p class="text-DarkGrayishBlue text-center lg:hidden">
+        Copyright 2020. All Rights Reserved
+      </p>
     </section>
 
     <!-- <div class="attribution">

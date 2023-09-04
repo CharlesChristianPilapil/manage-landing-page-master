@@ -38,19 +38,21 @@ section div ul li {
 }
 
 @media (min-width: 967px) {
-
   #simplify {
     background-image: url("../images/bg-simplify-section-desktop.svg");
     background-size: cover;
-  }  
+  }
 
   section div ul li {
     width: 6.3rem;
   }
 }
 
+#nav-bar.active {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 #socIcon i {
   @apply text-4xl cursor-pointer text-VeryLightGray hover:text-BrightRed transition duration-300;
 }
-
