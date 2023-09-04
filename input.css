@@ -9,7 +9,7 @@ body {
 }
 
 nav ul li {
-  @apply my-1 md:mx-3 md:my-0 lg:mx-5;
+  @apply my-2 md:mx-3 md:my-3 lg:my-0 lg:mx-5;
 }
 
 nav ul li a {
