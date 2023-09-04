@@ -742,12 +742,12 @@ video {
   border-bottom-left-radius: 9999px;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .border-\[3px\] {
   border-width: 3px;
+}
+
+.border {
+  border-width: 1px;
 }
 
 .border-BrightRed {
@@ -755,9 +755,14 @@ video {
   border-color: hsl(12 88% 59% / var(--tw-border-opacity));
 }
 
-.border-green-500 {
+.border-gray-50 {
   --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity));
+  border-color: rgb(249 250 251 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-BrightRed {
@@ -927,6 +932,9 @@ video {
 
 body {
   background-image: url("../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: 600px;
+  background-position: 3rem -5rem;
 }
 
 nav ul li {
@@ -1048,7 +1056,10 @@ nav ul li a:hover {
   background-repeat: no-repeat;
 }
 
-#get-started1:hover, #get-started:hover, #get-started-white:hover, #go:hover  {
+#get-started1:hover,
+#get-started:hover,
+#get-started-white:hover,
+#go:hover {
   box-shadow: black 0px 10px 10px -7px;
 }
 
@@ -1077,7 +1088,16 @@ section div ul li:hover {
     margin-bottom: 0px;
     margin-bottom: 0.75rem;
   }
+}
 
+@media (min-width: 768px) {
+  body {
+    background-size: 700px;
+    background-position: 15rem -10rem;
+  }
+}
+
+@media (min-width: 967px) {
   #simplify {
     background-image: url("../images/bg-simplify-section-desktop.svg");
     background-size: cover;
@@ -1085,6 +1105,18 @@ section div ul li:hover {
 
   section div ul li {
     width: 6.3rem;
+  }
+
+  body {
+    background-size: 800px;
+    background-position: 35rem -15rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-size: 900;
+    background-position: 55rem -15%;
   }
 }
 
@@ -1149,14 +1181,6 @@ section div ul li:hover {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
-  }
-
-  .md\:opacity-20 {
-    opacity: 0.2;
-  }
-
-  .md\:opacity-10 {
-    opacity: 0.1;
   }
 
   .md\:opacity-100 {
@@ -1228,6 +1252,18 @@ section div ul li:hover {
     width: 90%;
   }
 
+  .lg\:w-2\/4 {
+    width: 50%;
+  }
+
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
+  .lg\:w-5\/6 {
+    width: 83.333333%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -1270,13 +1306,13 @@ section div ul li:hover {
     place-self: end;
   }
 
+  .lg\:bg-transparent {
+    background-color: transparent;
+  }
+
   .lg\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent;
   }
 
   .lg\:px-0 {
