@@ -43,6 +43,28 @@ nav ul li a {
   box-shadow: black 0px 10px 10px -7px;
 }
 
+#nav-toggle.toggle {
+  animation: toggle 1s;
+}
+
+@keyframes toggle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#nav-bar.active {
+  opacity: 1;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#socIcon i {
+  @apply text-4xl cursor-pointer text-VeryLightGray hover:text-BrightRed transition duration-300;
+}
+
 section div ul li {
   @apply text-white font-semibold my-2 hover:text-BrightRed cursor-pointer transition duration-300 lg:my-0 lg:mb-3;
 }
@@ -75,13 +97,4 @@ section div ul li {
     background-size: 900;
     background-position: 55rem -15%;
   }
-}
-
-#nav-bar.active {
-  opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-#socIcon i {
-  @apply text-4xl cursor-pointer text-VeryLightGray hover:text-BrightRed transition duration-300;
 }
