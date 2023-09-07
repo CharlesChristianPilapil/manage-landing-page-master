@@ -1044,9 +1044,12 @@ nav ul li a:hover {
 
 #get-started1:hover,
 #get-started:hover,
-#get-started-white:hover,
-#go:hover {
+#get-started-white:hover {
   box-shadow: black 0px 10px 10px -7px;
+}
+
+#go:hover {
+  box-shadow: rgb(54, 54, 54) 0px 10px 10px -7px;
 }
 
 #nav-toggle.toggle {
