@@ -6,19 +6,35 @@ navToggle.addEventListener("click", () => {
 
   if (navToggle.classList.contains("active")) {
     navToggle.src = "../images/icon-close.svg";
+    toggle();
   } else {
     navToggle.src = "../images/icon-hamburger.svg";
+    toggle();
   }
 
   navBar.classList.toggle("active");
 });
 
 document.onclick = function(e) {
+
+
   if(e.target !== navBar && e.target !== navToggle) {
+    if(navBar.classList.contains('active') && navToggle.classList.contains('active')) {
+      toggle();
+    }
+
     navBar.classList.remove('active');
     navToggle.classList.remove('active')
     navToggle.src = "../images/icon-hamburger.svg";
   }
+}
+
+function toggle () {
+  navToggle.classList.add('toggle')
+
+  setTimeout(() => {
+    navToggle.classList.remove('toggle')
+  }, 200);
 }
 
 //   if(navToggle.src.match('../images/icon-hamburger.svg')) {
