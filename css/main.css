@@ -665,8 +665,8 @@ video {
   width: 100%;
 }
 
-.w-full {
-  width: 100%;
+.max-w-full {
+  max-width: 100%;
 }
 
 .cursor-pointer {
@@ -764,6 +764,11 @@ video {
 .bg-red-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+}
+
+.bg-red-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -1253,6 +1258,10 @@ section div ul li:hover {
 
   .lg\:w-\[90\%\] {
     width: 90%;
+  }
+
+  .lg\:max-w-full {
+    max-width: 100%;
   }
 
   .lg\:flex-row {
